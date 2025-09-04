@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004080;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/hero.jpg") center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Secciones */
+.section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  color: #004080;
+}
+
+/* Nosotros */
+.team-member {
+  margin-top: 2rem;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #004080;
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #004080;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
