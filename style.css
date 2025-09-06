@@ -140,7 +140,7 @@ body:not(.loaded) {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("img/fondo_correcto.png") no-repeat 30% center/cover;
+  background: url("img/fondo_correcto.jpeg") no-repeat 30% center/cover;
   /* 30% desde la izquierda en lugar de center */
   display: flex;
   align-items: flex-start;
