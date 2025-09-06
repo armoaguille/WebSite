@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre el Proyecto - Puentes de Aprendizaje</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="scroll-progress"></div>
 <header>
 <nav class="navbar">
     <div class="logo">
@@ -26,18 +30,25 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-    <h1>Puentes de Aprendizaje</h1>
-    <p>
-      Porque leer es mucho más que pronunciar, es comprender, crecer y conectar.
-    </p>
+      <h1 class="hero-title">Puentes de Aprendizaje</h1>
+      <p class="hero-subtitle">
+        Porque leer es mucho más que pronunciar, es comprender, crecer y conectar.
+      </p>
+      <div class="hero-cta">
+        <a href="proyecto.html" class="btn btn-primary">Conoce nuestro proyecto</a>
+        <a href="nosotros.html" class="btn btn-secondary">Conoce al equipo</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-arrow"></div>
     </div>
   </section>
 
   <!-- Qué es -->
-  <section class="section">
-    <h2>¿Qué es el Proyecto?</h2>
-    <p>
-      “Puentes de Aprendizaje” es un proyecto de <strong>Aprendizaje y Servicio (APS)</strong>
+  <section class="section reveal">
+    <h2 class="reveal fade-up">¿Qué es el Proyecto?</h2>
+    <p class="reveal fade-up" style="animation-delay: 0.2s;">
+      "Puentes de Aprendizaje" es un proyecto de <strong>Aprendizaje y Servicio (APS)</strong>
       dirigido por estudiantes de la <strong>Universidad de Piura (UDEP)</strong>. 
       Su objetivo principal es identificar y atender dificultades de aprendizaje en escolares,
       promoviendo un proceso educativo más inclusivo y equitativo.
@@ -45,42 +56,203 @@
   </section>
 
   <!-- Objetivos -->
-  <section class="section objetivos">
-    <h2>Objetivos</h2>
-    <ul>
-      <li>Detectar tempranamente dificultades de aprendizaje.</li>
-      <li>Diseñar estrategias de apoyo pedagógico.</li>
-      <li>Fomentar la colaboración entre estudiantes universitarios y escolares.</li>
+  <section class="section objetivos reveal">
+    <h2 class="reveal fade-up">Objetivos</h2>
+    <ul class="reveal fade-up" style="animation-delay: 0.2s;">
+      <li class="reveal fade-left" style="animation-delay: 0.3s;">Detectar tempranamente dificultades de aprendizaje.</li>
+      <li class="reveal fade-left" style="animation-delay: 0.4s;">Diseñar estrategias de apoyo pedagógico.</li>
+      <li class="reveal fade-left" style="animation-delay: 0.5s;">Fomentar la colaboración entre estudiantes universitarios y escolares.</li>
     </ul>
-    <a href="#detalle-proyecto" class="btn">Saber más</a>
+    <a href="proyecto.html" class="btn reveal fade-up" style="animation-delay: 0.6s;">Saber más</a>
   </section>
 
   <!-- Nosotros -->
-  <section class="section team">
-    <h2>Nuestro Equipo</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="img/equipo_ariana.png" alt="Persona 1">
-        <h3>Ariana Micaela Hurtado Coronado</h3>
-        <p>Descripción breve.</p>
+  <section class="section team reveal">
+    <div class="team-intro">
+      <h2 class="reveal fade-up">Nuestro Equipo</h2>
+      <p class="reveal fade-up" style="animation-delay: 0.2s;">
+        Un grupo de estudiantes apasionados por la psicología educativa, comprometidos con 
+        crear un impacto positivo en la educación de nuestro país.
+      </p>
+    </div>
+    
+    <div class="team-showcase">
+      <div class="team-member reveal fade-up" style="animation-delay: 0.2s;">
+        <div class="member-image-container">
+          <img src="img/equipo_ariana.png" alt="Ariana Micaela Hurtado Coronado">
+          <div class="member-overlay">
+            <div class="member-social">
+              <span class="member-role">.</span>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Ariana Micaela Hurtado Coronado</h3>
+          <p class="member-description">“La educación no cambia al mundo: cambia a las personas que van a cambiar el mundo.” — Paulo Freire</p>
+          <div class="member-skills">
+            <span class="skill-tag">Liderazgo</span>
+            <span class="skill-tag">Gestión</span>
+            <span class="skill-tag">Coordinación</span>
+          </div>
+        </div>
       </div>
-      <div class="team-member">
-        <img src="img/equipo_cesar.png" alt="Persona 2">
-        <h3>César Márquez</h3>
-        <p>Descripción breve.</p>
+      
+      <div class="team-member reveal fade-up" style="animation-delay: 0.3s;">
+        <div class="member-image-container">
+          <img src="img/equipo_cesar.png" alt="César Márquez">
+          <div class="member-overlay">
+            <div class="member-social">
+              <span class="member-role">.</span>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>César Márquez</h3>
+          <p class="member-description">“El objetivo de la educación es preparar a los jóvenes para que se eduquen a sí mismos durante toda su vida.” — Robert M. Hutchins</p>
+          <div class="member-skills">
+            <span class="skill-tag">Evaluación</span>
+            <span class="skill-tag">Análisis</span>
+            <span class="skill-tag">Investigación</span>
+          </div>
+        </div>
       </div>
-      <div class="team-member">
-        <img src="img/equipo_karen.png" alt="Persona 3">
-        <h3>Karen Nicole Lozano Pintado</h3>
-        <p>Descripción breve.</p>
+      
+      <div class="team-member reveal fade-up" style="animation-delay: 0.4s;">
+        <div class="member-image-container">
+          <img src="img/equipo_karen.png" alt="Karen Nicole Lozano Pintado">
+          <div class="member-overlay">
+            <div class="member-social">
+              <span class="member-role">.</span>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Karen Nicole Lozano Pintado</h3>
+          <p class="member-description">“La educación es el arma más poderosa que puedes usar para cambiar el mundo.” — Nelson Mandela</p>
+          <div class="member-skills">
+            <span class="skill-tag">Intervención</span>
+            <span class="skill-tag">Creatividad</span>
+            <span class="skill-tag">Empatía</span>
+          </div>
+        </div>
       </div>
-      <div class="team-member">
-        <img src="img/equipo_camila.jpg" alt="Persona 4">
-        <h3>Camila Castillo Cabrera</h3>
-        <p>Descripción breve.</p>
+      
+      <div class="team-member reveal fade-up" style="animation-delay: 0.5s;">
+        <div class="member-image-container">
+          <img src="img/equipo_camila.png" alt="Camila Castillo Cabrera">
+          <div class="member-overlay">
+            <div class="member-social">
+              <span class="member-role">.</span>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Camila Castillo Cabrera</h3>
+          <p class="member-description">"La tarea del educador moderno no es podar las selvas, sino regar los desiertos.” — C. S. Lewis</p>
+          <div class="member-skills">
+            <span class="skill-tag">Educación</span>
+            <span class="skill-tag">Materiales</span>
+            <span class="skill-tag">Inclusión</span>
+          </div>
+        </div>
       </div>
     </div>
-    <a href="#detalle-nosotros" class="btn">Saber más</a>
+    
+    <div class="team-cta reveal fade-up" style="animation-delay: 0.6s;">
+      <a href="nosotros.html" class="btn btn-primary">Conoce más sobre nuestro equipo</a>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section class="section blog-section reveal">
+    <div class="blog-intro">
+      <h2 class="reveal fade-up">Últimas Noticias</h2>
+      <p class="reveal fade-up" style="animation-delay: 0.2s;">
+        Mantente al día con los avances de nuestro proyecto y conoce más sobre la institución educativa donde trabajamos.
+      </p>
+    </div>
+    
+    <div class="blog-grid">
+      <article class="blog-post reveal fade-up" style="animation-delay: 0.2s;">
+        <div class="post-image">
+          <img src="img/logo_colegio.jpg" alt="I.E.E 6052 José María Eguren">
+          <div class="post-category">Institución</div>
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">5 Sep 2025</span>
+            <span class="post-read-time">5 min lectura</span>
+          </div>
+          <h3 class="post-title">Conociendo al colegio: I.E.E 6052 José María Eguren - Barranco</h3>
+          <p class="post-excerpt">
+            Conoce la institución educativa donde implementamos nuestro proyecto "Puentes de Aprendizaje". 
+            Una escuela comprometida con la educación inclusiva y de calidad en Barranco, Lima...
+          </p>
+          <div class="post-tags">
+            <span class="tag">CEBA</span>
+            <span class="tag">Barranco</span>
+            <span class="tag">Inclusión</span>
+          </div>
+          <a href="#" class="read-more-btn" onclick="openBlogPost('school')">Leer más →</a>
+        </div>
+      </article>
+      
+      <article class="blog-post reveal fade-up" style="animation-delay: 0.3s;">
+        <div class="post-image">
+          <div class="post-placeholder">
+            <span class="placeholder-icon">📊</span>
+          </div>
+          <div class="post-category">Progreso</div>
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">5 Sep 2025</span>
+            <span class="post-read-time">3 min lectura</span>
+          </div>
+          <h3 class="post-title">Primeros Resultados del Proyecto</h3>
+          <p class="post-excerpt">
+            Compartimos los primeros avances de nuestra evaluación inicial y las estrategias 
+            que estamos implementando para apoyar a los estudiantes...
+          </p>
+          <div class="post-tags">
+            <span class="tag">Resultados</span>
+            <span class="tag">Evaluación</span>
+            <span class="tag">Progreso</span>
+          </div>
+          <a href="#" class="read-more-btn" onclick="openBlogPost('results')">Leer más →</a>
+        </div>
+      </article>
+      
+      <article class="blog-post reveal fade-up" style="animation-delay: 0.4s;">
+        <div class="post-image">
+          <div class="post-placeholder">
+            <span class="placeholder-icon">🎯</span>
+          </div>
+          <div class="post-category">Metodología</div>
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">5 Sep 2025</span>
+            <span class="post-read-time">4 min lectura</span>
+          </div>
+          <h3 class="post-title">Nuestra Metodología de Trabajo</h3>
+          <p class="post-excerpt">
+            Te explicamos paso a paso cómo desarrollamos nuestro enfoque de Aprendizaje y Servicio, 
+            desde la evaluación hasta la intervención...
+          </p>
+          <div class="post-tags">
+            <span class="tag">Metodología</span>
+            <span class="tag">APS</span>
+            <span class="tag">Proceso</span>
+          </div>
+          <a href="#" class="read-more-btn" onclick="openBlogPost('methodology')">Leer más →</a>
+        </div>
+      </article>
+    </div>
+    
+    <div class="blog-cta reveal fade-up" style="animation-delay: 0.5s;">
+      <a href="publicaciones.html" class="btn btn-outline">Ver todas las publicaciones</a>
+    </div>
   </section>
 
   <!-- Footer -->
