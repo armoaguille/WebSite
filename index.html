@@ -21,6 +21,7 @@
       <li><a href="proyecto.html">Proyecto</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
       <li><a href="publicaciones.html">Publicaciones</a></li>
+      <li><a href="galeria.html">Galería</a></li>
       <li><a href="cronograma.html">Cronograma</a></li>
     </ul>
     <div class="menu-toggle" id="menu-toggle">&#9776;</div>
@@ -28,7 +29,7 @@
 </header>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/fondo_principal.png'); background-size: cover; background-position: center;">
     <div class="hero-content">
       <h1 class="hero-title">Puentes de Aprendizaje</h1>
       <p class="hero-subtitle">
@@ -41,6 +42,17 @@
     </div>
     <div class="hero-scroll-indicator">
       <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Presentación de Bienvenida -->
+  <section class="section welcome-section reveal">
+    <div class="welcome-content">
+      <h3 class="reveal fade-up">Bienvenidos a nuestro proyecto de Aprendizaje-Servicio</h3>
+      <div class="welcome-text reveal fade-up" style="animation-delay: 0.2s;">
+        <h3><strong>"Puentes de Aprendizaje"</strong></h3>
+        <p>Busca tender un vínculo entre la formación académica que recibimos y las necesidades reales de los niños, construyendo un camino que acerque el conocimiento psicológico a la comunidad educativa.</p>
+      </div>
     </div>
   </section>
 
@@ -163,6 +175,41 @@
     </div>
   </section>
 
+  <!-- Contacto Section -->
+  <section class="section contacto-section reveal">
+    <div class="contacto-intro">
+      <h2 class="reveal fade-up">Contacto</h2>
+      <p class="reveal fade-up" style="animation-delay: 0.2s;">
+        ¿Tienes alguna pregunta sobre nuestro proyecto o te gustaría colaborar con nosotros? 
+        No dudes en contactarnos.
+      </p>
+    </div>
+    
+    <div class="contacto-grid">
+      <div class="contacto-item reveal fade-up" style="animation-delay: 0.3s;">
+        <div class="contacto-icon">📧</div>
+        <h3>Email</h3>
+        <p>puentesdeaprendizaje@udep.edu.pe</p>
+      </div>
+      
+      <div class="contacto-item reveal fade-up" style="animation-delay: 0.4s;">
+        <div class="contacto-icon">🏫</div>
+        <h3>Universidad de Piura</h3>
+        <p>Facultad de Humanidades<br>Programa de Psicología</p>
+      </div>
+      
+      <div class="contacto-item reveal fade-up" style="animation-delay: 0.5s;">
+        <div class="contacto-icon">📍</div>
+        <h3>Ubicación</h3>
+        <p>Campus Lima<br>Av. Ramón Mugica 131<br>Urb. San Eduardo</p>
+      </div>
+    </div>
+    
+    <div class="contacto-cta reveal fade-up" style="animation-delay: 0.6s;">
+      <a href="nosotros.html" class="btn btn-primary">Conoce a nuestro equipo</a>
+    </div>
+  </section>
+
   <!-- Blog Posts Section -->
   <section class="section blog-section reveal">
     <div class="blog-intro">
@@ -175,51 +222,53 @@
     <div class="blog-grid">
       <article class="blog-post reveal fade-up" style="animation-delay: 0.2s;">
         <div class="post-image">
-          <img src="img/logo_colegio.jpg" alt="I.E.E 6052 José María Eguren">
-          <div class="post-category">Institución</div>
+          <div class="post-placeholder">
+            <span class="placeholder-icon">🔍</span>
+          </div>
+          <div class="post-category">Metodología</div>
         </div>
         <div class="post-content">
           <div class="post-meta">
-            <span class="post-date">5 Sep 2025</span>
-            <span class="post-read-time">5 min lectura</span>
+            <span class="post-date">Sep 2025</span>
+            <span class="post-read-time">8 min lectura</span>
           </div>
-          <h3 class="post-title">Conociendo al colegio: I.E.E 6052 José María Eguren - Barranco</h3>
+          <h3 class="post-title">Fase de Diagnóstico</h3>
           <p class="post-excerpt">
-            Conoce la institución educativa donde implementamos nuestro proyecto "Puentes de Aprendizaje". 
-            Una escuela comprometida con la educación inclusiva y de calidad en Barranco, Lima...
+            Conoce los detalles de nuestra fase inicial de evaluación y detección de dificultades de aprendizaje. 
+            Instrumentos utilizados y primeros hallazgos...
           </p>
           <div class="post-tags">
-            <span class="tag">CEBA</span>
-            <span class="tag">Barranco</span>
-            <span class="tag">Inclusión</span>
+            <span class="tag">Diagnóstico</span>
+            <span class="tag">Evaluación</span>
+            <span class="tag">Metodología</span>
           </div>
-          <a href="#" class="read-more-btn" onclick="openBlogPost('school')">Leer más →</a>
+          <a href="diagnostico.html" class="read-more-btn">Leer más →</a>
         </div>
       </article>
       
       <article class="blog-post reveal fade-up" style="animation-delay: 0.3s;">
         <div class="post-image">
           <div class="post-placeholder">
-            <span class="placeholder-icon">📊</span>
+            <span class="placeholder-icon">📋</span>
           </div>
-          <div class="post-category">Progreso</div>
+          <div class="post-category">Metodología</div>
         </div>
         <div class="post-content">
           <div class="post-meta">
-            <span class="post-date">5 Sep 2025</span>
-            <span class="post-read-time">3 min lectura</span>
+            <span class="post-date">Sep 2025</span>
+            <span class="post-read-time">6 min lectura</span>
           </div>
-          <h3 class="post-title">Primeros Resultados del Proyecto</h3>
+          <h3 class="post-title">Fase de Preparación</h3>
           <p class="post-excerpt">
-            Compartimos los primeros avances de nuestra evaluación inicial y las estrategias 
-            que estamos implementando para apoyar a los estudiantes...
+            Descubre cómo nos preparamos para la implementación del proyecto. 
+            Planificación, organización y estrategias de trabajo...
           </p>
           <div class="post-tags">
-            <span class="tag">Resultados</span>
-            <span class="tag">Evaluación</span>
-            <span class="tag">Progreso</span>
+            <span class="tag">Preparación</span>
+            <span class="tag">Planificación</span>
+            <span class="tag">Metodología</span>
           </div>
-          <a href="#" class="read-more-btn" onclick="openBlogPost('results')">Leer más →</a>
+          <a href="preparacion.html" class="read-more-btn">Leer más →</a>
         </div>
       </article>
       
